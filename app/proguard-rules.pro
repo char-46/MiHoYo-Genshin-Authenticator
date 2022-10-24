@@ -2,7 +2,7 @@
 
 -keep class com.geetest.sdk.**{*;}
 
--keep class hat.auth.**{*;}
+-keep class char46.auth.**{*;}
 
 -dontwarn com.geetest.sdk.**
 

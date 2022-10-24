@@ -10,11 +10,11 @@ android {
     compileSdk = 32
 
     defaultConfig {
-        applicationId = "hat.auth"
+        applicationId = "char46.auth"
         minSdk = 26
         targetSdk = 31
         versionCode = 13
-        versionName = "1.1.9"
+        versionName = "2.0.0"
         multiDexEnabled = true
         resourceConfigurations.apply {
             clear()
@@ -75,6 +75,7 @@ android {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
     }
+    namespace = "char46.auth"
 }
 
 dependencies {
