@@ -14,7 +14,7 @@ android {
         minSdk = 26
         targetSdk = 31
         versionCode = 13
-        versionName = "2.0.0"
+        versionName = "2.0.1"
         multiDexEnabled = true
         resourceConfigurations.apply {
             clear()
