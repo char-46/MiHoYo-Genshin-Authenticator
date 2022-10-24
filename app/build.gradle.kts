@@ -7,19 +7,20 @@ val vCompose = "1.2.0-beta03"
 
 android {
 
-    compileSdk = 32
+    compileSdk = 33
 
     defaultConfig {
         applicationId = "char46.auth"
         minSdk = 26
-        targetSdk = 31
+        targetSdk = 33
         versionCode = 13
-        versionName = "2.0.1"
+        versionName = "2.0.3"
         multiDexEnabled = true
         resourceConfigurations.apply {
             clear()
             add("zh")
         }
+
     }
 
     buildTypes {
@@ -37,6 +38,7 @@ android {
         }
 
         release {
+
             enableMinify()
             versionNameSuffix = "-release"
             buildConfigField("String","APP_CENTER_KEY","\"1c793f09-3bc5-4eb7-984c-b5f3d975601f\"")
@@ -81,15 +83,15 @@ android {
 dependencies {
 
     implementation("com.google.code.gson:gson:2.9.0")
-    implementation("com.google.android.material:material:1.6.1")
+    implementation("com.google.android.material:material:1.7.0")
     implementation("com.google.accompanist:accompanist-permissions:0.20.0")
     implementation("com.google.accompanist:accompanist-swiperefresh:0.20.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.1")
 
-    implementation("androidx.core:core-ktx:1.8.0")
-    implementation("androidx.appcompat:appcompat:1.4.2")
-    implementation("androidx.activity:activity-compose:1.5.0")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.0")
+    implementation("androidx.core:core-ktx:1.9.0")
+    implementation("androidx.appcompat:appcompat:1.5.1")
+    implementation("androidx.activity:activity-compose:1.6.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
     implementation("androidx.security:security-crypto-ktx:1.1.0-alpha03")
     implementation("com.google.crypto.tink:tink-android") {
         version {

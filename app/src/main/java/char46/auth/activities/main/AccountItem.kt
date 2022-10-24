@@ -59,7 +59,7 @@ fun AccountItem(
         showInfoButton = false
         ia.uid + " (Tap)"
     } else {
-        ia.guid //+ '|' + ia.sToken + '|' + ia.uid
+        ia.guid
     }
     Row(
         modifier = Modifier.padding(
