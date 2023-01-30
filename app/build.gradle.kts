@@ -3,7 +3,7 @@ plugins {
     id("com.android.application")
 }
 
-val vCompose = "1.2.1"
+val vCompose = "1.2.0-beta03"
 
 android {
 
