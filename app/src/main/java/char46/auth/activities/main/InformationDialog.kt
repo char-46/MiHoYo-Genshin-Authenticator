@@ -234,7 +234,7 @@ private fun MainActivity.IND() = Dialog(onDismissRequest = {
             ) {
                 Oculi(
                     resId = R.drawable.ic_interactive_map_dendroculus,
-                    text = "${dendroculus_number}/180"
+                    text = "${dendroculus_number}/235"
                 )
             }
             Divider()
