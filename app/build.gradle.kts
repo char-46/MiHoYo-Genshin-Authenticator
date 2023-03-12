@@ -13,7 +13,7 @@ android {
         applicationId = "char46.auth"
         minSdk = 26
         targetSdk = 33
-        versionCode = 14
+        versionCode = 15
         versionName = "2.0.5"
         multiDexEnabled = true
         resourceConfigurations.apply {
