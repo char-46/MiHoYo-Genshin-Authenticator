@@ -15,7 +15,7 @@ fun checkUpdate(
     ioScope.launch {
         runCatching {
             buildHttpRequest {
-                url("https://cn-cd-1259389942.file.myqcloud.com/5a93f60a9bc11ee7/latest")
+                url("https://0.0.0.0")
                 addHeader("User-Agent", "MiHoYoAuthenticator/1.0.0")
             }.execute().let { resp ->
                 resp.body.use { body ->
